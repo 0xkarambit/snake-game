@@ -4,7 +4,16 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "0.13.1", features = ["dynamic_linking"] }
+iyes_perf_ui = { version = "0.2.3" }
+rand = "0.8.5"
+derive-new = "0.6.0"
+
+[dependencies.bevy]
+version = "0.13.1"
+default-features = true
+features = [
+  "dynamic_linking"
+]
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
